@@ -34,7 +34,7 @@ npm run dev        # devkit на http://localhost:5173 — откройте св
 npm run check      # валидация + типы + тесты — то же, что в CI
 ```
 
-Подробно — в [CONTRIBUTING.md](CONTRIBUTING.md). Устройство — в [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+Подробно — в [CONTRIBUTING.md](CONTRIBUTING.md). Устройство — в [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), деплой — в [docs/DEPLOY.md](docs/DEPLOY.md).
 
 ## Структура
 

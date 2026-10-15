@@ -1,0 +1,31 @@
+# Публичная часть Savemancer. Домены и HTTPS — в Nginx Proxy Manager (сеть edge):
+#   cdn.savemancer.com → savemancer-cdn:80
+#   dev.savemancer.com → savemancer-devkit:80
+services:
+  cdn:
+    build:
+      context: .
+      target: cdn
+    image: savemancer-cdn:latest
+    container_name: savemancer-cdn
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - edge
+
+  devkit:
+    build:
+      context: .
+      target: devkit
+    image: savemancer-devkit:latest
+    container_name: savemancer-devkit
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - edge
+
+networks:
+  edge:
+    external: true
