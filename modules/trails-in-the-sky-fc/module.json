@@ -1,0 +1,20 @@
+{
+  "id": "trails-in-the-sky-fc",
+  "game": "The Legend of Heroes: Trails in the Sky FC",
+  "version": "0.2.0",
+  "sdk": "^0.1.0",
+  "authors": ["savemancer"],
+  "status": "beta",
+  "platforms": ["pc"],
+  "files": [
+    { "pattern": "*.sav", "description": "Auto0.sav … Auto9.sav — автосохранения" },
+    { "pattern": "SVDAT*.SAV", "description": "ручные сохранения" }
+  ],
+  "saveLocations": {
+    "pc": [
+      "C:\\Program Files (x86)\\Steam\\userdata\\<ID Steam>\\251150\\remote\\FC\\",
+      "~/.local/share/Steam/userdata/<ID Steam>/251150/remote/FC/  (Linux, Steam Deck)"
+    ]
+  },
+  "references": []
+}
