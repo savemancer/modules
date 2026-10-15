@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Savemancer Devkit</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/icon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header>
+      <strong class="brand"><img src="/mark.svg" alt="" width="28" height="28" />Savemancer Devkit</strong>
+      <select id="module"></select>
+    </header>
+    <main>
+      <section id="info"></section>
+      <label id="drop">
+        <input id="file" type="file" multiple hidden />
+        Перетащите файлы сейва сюда или нажмите, чтобы выбрать
+      </label>
+      <p id="status"></p>
+      <section id="editor"></section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

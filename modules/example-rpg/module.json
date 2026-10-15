@@ -1,0 +1,13 @@
+{
+  "id": "example-rpg",
+  "game": "Example RPG (демо-формат)",
+  "version": "1.0.0",
+  "sdk": "^0.1.0",
+  "authors": ["Savemancer"],
+  "status": "stable",
+  "platforms": ["pc"],
+  "files": [{ "pattern": "*.xsav", "description": "Слот сохранения" }],
+  "saveLocations": {
+    "pc": ["%USERPROFILE%\\Documents\\ExampleRPG\\save\\slot01.xsav"]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "__ID__",
+  "game": "__GAME__",
+  "version": "0.1.0",
+  "sdk": "^0.1.0",
+  "authors": ["your-github-username"],
+  "status": "experimental",
+  "platforms": ["pc"],
+  "files": [{ "pattern": "*.sav", "description": "Файл сохранения" }],
+  "saveLocations": {
+    "pc": ["TODO: путь к сейвам"]
+  },
+  "references": []
+}

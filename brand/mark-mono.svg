@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 12H44L52 20V48A4 4 0 0 1 48 52H16A4 4 0 0 1 12 48V16A4 4 0 0 1 16 12Z"/><path d="M22 12V20A2 2 0 0 0 24 22H38A2 2 0 0 0 40 20V12"/><path d="M34 15V19"/></g>
+  <path transform="translate(32 38) scale(0.95)" d="M0 -10 Q1.6 -1.6 10 0 Q1.6 1.6 0 10 Q-1.6 1.6 -10 0 Q-1.6 -1.6 0 -10Z" fill="currentColor"/>
+  <path transform="translate(44 31) scale(0.32)" d="M0 -10 Q1.6 -1.6 10 0 Q1.6 1.6 0 10 Q-1.6 1.6 -10 0 Q-1.6 -1.6 0 -10Z" fill="currentColor"/>
+</svg>

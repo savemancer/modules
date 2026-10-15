@@ -1,0 +1,5 @@
+# Любые изменения требуют ревью мейнтейнера; SDK, скрипты и CI — особенно.
+*                   @savemancer/maintainers
+/packages/          @savemancer/core
+/scripts/           @savemancer/core
+/.github/           @savemancer/core
