@@ -54,6 +54,10 @@ for (const { folder, dir, manifest: m } of modules) {
   if (!STATUSES.includes(m.status)) fail(folder, `status must be one of ${STATUSES.join(', ')}`);
   if (!Array.isArray(m.platforms) || m.platforms.some((p) => !PLATFORMS.includes(p))) fail(folder, `platforms must be from ${PLATFORMS.join(', ')}`);
   if (!Array.isArray(m.files) || m.files.length === 0) fail(folder, 'files must list at least one pattern');
+  if (m.description !== undefined && (typeof m.description !== 'string' || m.description.length > 300)) fail(folder, 'description must be a string up to 300 chars');
+  if (m.features !== undefined && (!Array.isArray(m.features) || m.features.some((f) => typeof f !== 'string' || f.length > 120))) {
+    fail(folder, 'features must be an array of strings up to 120 chars');
+  }
 
   if (!existsSync(join(dir, 'README.md'))) fail(folder, 'README.md missing');
   if (!existsSync(join(dir, 'src', 'index.ts'))) {

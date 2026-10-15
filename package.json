@@ -11,7 +11,7 @@
     "typecheck": "tsc -p tsconfig.json",
     "validate": "node scripts/validate.mjs",
     "build": "node scripts/build.mjs",
-    "serve:cdn": "npm run build && node scripts/serve-cdn.mjs",
+    "serve:cdn": "INCLUDE_EXAMPLES=1 npm run build && node scripts/serve-cdn.mjs",
     "check": "npm run validate && npm run typecheck && npm test",
     "new-module": "node scripts/new-module.mjs"
   },

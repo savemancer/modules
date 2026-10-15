@@ -11,8 +11,11 @@ rmSync(OUT, { recursive: true, force: true });
 
 const sdkVersion = JSON.parse(readFileSync('packages/sdk/package.json', 'utf8')).version;
 const entries = [];
+// Учебные модули (example-*) не публикуются на сайт; для локальной разработки: INCLUDE_EXAMPLES=1
+const includeExamples = process.env.INCLUDE_EXAMPLES === '1';
 
 for (const { dir, manifest } of listModules()) {
+  if (manifest.id.startsWith('example-') && !includeExamples) continue;
   const file = `modules/${manifest.id}/${manifest.version}.js`;
   const outfile = join(OUT, file);
   mkdirSync(join(OUT, 'modules', manifest.id), { recursive: true });

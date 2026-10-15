@@ -33,6 +33,10 @@ export interface ModuleManifest {
   saveLocations?: Partial<Record<Platform, string[]>>;
   /** Ссылки на исследования формата, если есть */
   references?: string[];
+  /** Одно-два предложения о редакторе для страницы игры и поисковиков */
+  description?: string;
+  /** Что можно изменить — короткие пункты для страницы игры: «Мира и сепиты», «Уровень и EXP персонажей» */
+  features?: string[];
 }
 
 /** Путь к значению внутри данных модуля: "party.0.hp" */

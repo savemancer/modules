@@ -1,0 +1,23 @@
+{
+  "id": "clair-obscur-expedition-33",
+  "game": "Clair Obscur: Expedition 33",
+  "version": "0.1.0",
+  "sdk": "^0.1.0",
+  "authors": ["savemancer"],
+  "status": "experimental",
+  "platforms": ["pc"],
+  "files": [{ "pattern": "EXPEDITION_*.sav", "description": "сохранение экспедиции (EXPEDITION_0.sav — первый слот)" }],
+  "saveLocations": {
+    "pc": [
+      "%LOCALAPPDATA%\\Sandfall\\Saved\\SaveGames\\<ID Steam>\\",
+      "~/.local/share/Steam/steamapps/compatdata/1903340/pfx/drive_c/users/steamuser/AppData/Local/Sandfall/Saved/SaveGames/<ID Steam>/  (Linux, Steam Deck)"
+    ]
+  },
+  "description": "Редактор сохранений Clair Obscur: Expedition 33 (Steam): золото, уровни и атрибуты персонажей, материалы и расходники.",
+  "features": [
+    "Золото",
+    "Уровень и опыт персонажей",
+    "Очки атрибутов: живучесть, сила, ловкость, защита, удача",
+    "Хрома-катализаторы, Цвета Люмины, перекраски и другие расходники"
+  ]
+}

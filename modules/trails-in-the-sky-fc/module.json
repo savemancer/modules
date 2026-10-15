@@ -3,12 +3,22 @@
   "game": "The Legend of Heroes: Trails in the Sky FC",
   "version": "0.2.0",
   "sdk": "^0.1.0",
-  "authors": ["savemancer"],
+  "authors": [
+    "savemancer"
+  ],
   "status": "beta",
-  "platforms": ["pc"],
+  "platforms": [
+    "pc"
+  ],
   "files": [
-    { "pattern": "*.sav", "description": "Auto0.sav … Auto9.sav — автосохранения" },
-    { "pattern": "SVDAT*.SAV", "description": "ручные сохранения" }
+    {
+      "pattern": "*.sav",
+      "description": "Auto0.sav … Auto9.sav — автосохранения"
+    },
+    {
+      "pattern": "SVDAT*.SAV",
+      "description": "ручные сохранения"
+    }
   ],
   "saveLocations": {
     "pc": [
@@ -16,5 +26,13 @@
       "~/.local/share/Steam/userdata/<ID Steam>/251150/remote/FC/  (Linux, Steam Deck)"
     ]
   },
-  "references": []
+  "references": [],
+  "description": "Редактор сохранений Steam-версии Trails in the Sky FC: деньги, сепиты, уровни персонажей и инвентарь. Проверено в игре.",
+  "features": [
+    "Мира и очки брейсера (BP)",
+    "Сепиты всех семи элементов",
+    "Уровень и EXP всех 8 персонажей — EXP встаёт на порог уровня",
+    "Текущие HP, EP и CP",
+    "Количество любого из 366 предметов: оружие, броня, кварц, еда, ингредиенты"
+  ]
 }
