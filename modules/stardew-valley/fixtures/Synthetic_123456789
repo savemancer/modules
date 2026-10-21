@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SaveGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <player>
+    <name>Синтетик</name>
+    <items>
+      <Item xsi:type="Tool"><name>Axe</name><money>1</money><stack>1</stack></Item>
+      <Item xsi:nil="true" />
+    </items>
+    <farmName>Тестовая</farmName>
+    <money>1500</money>
+    <totalMoneyEarned>12000</totalMoneyEarned>
+    <qiGems>3</qiGems>
+    <clubCoins>0</clubCoins>
+    <maxHealth>100</maxHealth>
+    <maxStamina>270</maxStamina>
+    <farmingLevel>2</farmingLevel>
+    <miningLevel>1</miningLevel>
+    <combatLevel>0</combatLevel>
+    <foragingLevel>3</foragingLevel>
+    <fishingLevel>1</fishingLevel>
+    <luckLevel>0</luckLevel>
+    <experiencePoints>
+      <int>400</int>
+      <int>120</int>
+      <int>800</int>
+      <int>150</int>
+      <int>40</int>
+      <int>0</int>
+    </experiencePoints>
+    <friendshipData><item><key><string>Abigail</string></key><value><Friendship><Points>250</Points></Friendship></value></item></friendshipData>
+  </player>
+  <locations><GameLocation><name>Farm</name><money>777</money></GameLocation></locations>
+  <currentSeason>spring</currentSeason>
+</SaveGame>

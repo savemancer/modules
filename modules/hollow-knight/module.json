@@ -1,0 +1,25 @@
+{
+  "id": "hollow-knight",
+  "game": "Hollow Knight",
+  "version": "0.1.0",
+  "sdk": "^0.1.0",
+  "authors": ["savemancer"],
+  "status": "experimental",
+  "platforms": ["pc"],
+  "files": [{ "pattern": "user*.dat", "description": "user1.dat … user4.dat — слоты профилей" }],
+  "saveLocations": {
+    "pc": [
+      "%USERPROFILE%\\AppData\\LocalLow\\Team Cherry\\Hollow Knight\\",
+      "~/.config/unity3d/Team Cherry/Hollow Knight/  (Linux, Steam Deck)",
+      "~/Library/Application Support/unity.Team Cherry.Hollow Knight/  (macOS)"
+    ]
+  },
+  "references": ["https://github.com/bloodorca/hollow"],
+  "description": "Редактор сохранений Hollow Knight (ПК): гео, маски и сосуды души, гвоздь, амулеты и ячейки, ключи и предметы.",
+  "features": [
+    "Гео, бледная руда, простые ключи, тухлые яйца, эссенция",
+    "Маски здоровья, осколки масок и сосуды души",
+    "Улучшения гвоздя — урон пересчитывается",
+    "Ячейки амулетов и все 40 амулетов"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "slay-the-spire",
+  "game": "Slay the Spire",
+  "version": "0.1.0",
+  "sdk": "^0.1.0",
+  "authors": ["savemancer"],
+  "status": "experimental",
+  "platforms": ["pc"],
+  "files": [{ "pattern": "*.autosave", "description": "сохранение текущего забега: IRONCLAD.autosave, THE_SILENT.autosave, DEFECT.autosave, WATCHER.autosave" }],
+  "saveLocations": {
+    "pc": [
+      "<папка игры Steam>\\SlayTheSpire\\saves\\",
+      "~/.local/share/Steam/steamapps/common/SlayTheSpire/saves/  (Linux)"
+    ]
+  },
+  "references": ["https://docs.rs/crate/libsts/latest", "https://github.com/rahmatnazali/spireslayer"],
+  "description": "Редактор текущего забега Slay the Spire: золото, здоровье, ключи 4-го акта и улучшения карт в колоде.",
+  "features": ["Золото", "Текущее и максимальное здоровье", "Изумрудный, рубиновый и сапфировый ключи", "Улучшения любой карты в колоде"]
+}

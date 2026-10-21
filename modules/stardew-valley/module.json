@@ -1,0 +1,19 @@
+{
+  "id": "stardew-valley",
+  "game": "Stardew Valley",
+  "version": "0.1.0",
+  "sdk": "^0.1.0",
+  "authors": ["savemancer"],
+  "status": "experimental",
+  "platforms": ["pc"],
+  "files": [{ "pattern": "<Имя>_<число>", "description": "основной файл фермы без расширения — с тем же именем, что и папка (не SaveGameInfo)" }],
+  "saveLocations": {
+    "pc": [
+      "%APPDATA%\\StardewValley\\Saves\\<Имя>_<число>\\",
+      "~/.config/StardewValley/Saves/<Имя>_<число>/  (Linux, Steam Deck)"
+    ]
+  },
+  "references": ["https://github.com/MouseyPounds/stardew-checkup"],
+  "description": "Редактор сохранений Stardew Valley (ПК): деньги, Qi-самоцветы, клубные монеты, здоровье, энергия, уровни и опыт навыков.",
+  "features": ["Деньги, Qi-самоцветы, монеты казино", "Максимальные здоровье и энергия", "Уровни и опыт навыков: земледелие, рыбалка, собирательство, шахтёрство, бой"]
+}

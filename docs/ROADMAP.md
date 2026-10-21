@@ -7,11 +7,11 @@
 | # | Игра | Формат | Сложность | Проверка в игре | Статус |
 |---|------|--------|-----------|-----------------|--------|
 | 1 | Trails in the Sky FC | бинарный, без чексуммы | — | ✔ | **beta** |
-| 2 | Clair Obscur: Expedition 33 | Unreal Engine 5 GVAS, без сжатия | средняя | ✔ сейвы есть | следующий |
-| 3 | Stardew Valley | XML | низкая | по сейвам сообщества | — |
-| 4 | Hollow Knight | JSON, AES с публичным ключом | низкая | по сейвам сообщества | — |
+| 2 | Clair Obscur: Expedition 33 | Unreal Engine 5 GVAS, без сжатия | средняя | ✔ сейвы есть | **experimental** |
+| 3 | Stardew Valley | XML | низкая | по сейвам сообщества | **experimental** (синтетический сейв) |
+| 4 | Hollow Knight | JSON, AES с публичным ключом | низкая | по сейвам сообщества | **experimental** (синтетический сейв) |
 | 5 | Undertale / DELTARUNE | текст построчно | низкая | DELTARUNE установлена | — |
-| 6 | Slay the Spire | JSON, base64 + XOR | низкая | по сейвам сообщества | — |
+| 6 | Slay the Spire | JSON, base64 + XOR | низкая | по сейвам сообщества | **experimental** (синтетический сейв) |
 | 7 | Terraria (персонаж `.plr`) | бинарный, AES с публичным ключом | средняя | по сейвам сообщества | — |
 | 8 | Subnautica | JSON + protobuf | высокая | ✔ сейвы есть | — |
 
@@ -21,6 +21,11 @@
 - **Движок Unreal (GVAS)** — парсер из модуля Clair Obscur переносится в SDK и открывает другие UE-игры
   (Palworld, Persona 3 Reload, Hogwarts Legacy — у части есть сжатие или шифрование поверх GVAS).
 - **RPG Maker MV/MZ** — один модуль на тысячи инди-игр: JSON (LZString / zlib), деньги, уровни, предметы по id.
+
+SDK уже умеет: GVAS (Unreal), AES-ECB/CBC, base64, точечную правку JSON (`JsonText`).
+
+**Нужны настоящие сейвы** Hollow Knight, Slay the Spire, Stardew Valley, Terraria, DELTARUNE — модули для первых трёх
+собраны по открытым описаниям форматов и проверены только на синтетике.
 
 Не берём: игры с онлайном и античитом (HELLDIVERS 2, онлайн Elden Ring), Witcher 3 и Control — пока
 (сложные проприетарные форматы), игры для взрослых — бренд-риск.
